@@ -21,11 +21,11 @@
          steps {
             echo &apos;Hello World&apos;
          }
-      stage(&apos;Clean&apos;) {
-          steps {
-              mvn clean install
-          }
       }
+      stage(&apos;Clean&apos;) {
+         steps {
+            mvn clean install
+          }
       }
    }
 }</script>
